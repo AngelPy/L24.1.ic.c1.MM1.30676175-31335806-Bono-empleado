@@ -1,17 +1,21 @@
 export default class Cl_IEmpleado{
 
     readNombre(){
-        prompt("Ingrese el nombre del empleado");
+        return prompt("Ingrese el nombre del empleado");
     }
     readMontoVentas(){
-        prompt("Ingrese el monto de ventas");
+        return prompt("Ingrese el monto de ventas");
     }
 
+    readPorcentaje(){
+        return prompt("Ingrese el porcentaje de bono");
+    }
 
-    mostrarEmpleado(n,mv,b){
+    mostrarEmpleado(n,mv,p,b){
         return`
         <br> Nombre: ${n}
         <br> Monto de ventas: ${mv}
+        <br> Porcentaje de bono: ${p}
         <br> Bono de ventas: ${b}
         `
     }

@@ -1,3 +1,8 @@
+
+function BonoVent(mont,porc){
+    return mont * (porc / 100);
+}
+
 export default class Cl_Empleado{
     constructor(nombre, mont_ventas, porcentaje){
         this.nombre = nombre;
@@ -31,9 +36,6 @@ export default class Cl_Empleado{
     }
 
     CalcularBonoVentas(){
-        return this._mont_ventas * (this._porcentaje / 100);
+        return BonoVent(this.mont_ventas, this.porcentaje);
     }
-
-
-
 }
